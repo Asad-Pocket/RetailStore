@@ -45,7 +45,7 @@ namespace RetailStore.Controllers
         {
             _repository.Delete(id);
             _repository.Save();
-            return View(DisplayItems());
+            return RedirectToAction("DisplayItems");
         }
         public IActionResult SearchItem()
         {
